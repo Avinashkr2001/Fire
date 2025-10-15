@@ -1,0 +1,35 @@
+:root {
+  --bg: #030310;
+  --hint-bg: rgba(255,255,255,0.08);
+  --hint-color: rgba(255,255,255,0.9);
+  --font: "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  overflow: hidden;
+  background: radial-gradient(ellipse at center, #0b0b13 0%, var(--bg) 70%);
+  font-family: var(--font);
+}
+
+canvas {
+  display: block;
+  width: 100vw;
+  height: 100vh;
+}
+
+#hint {
+  position: fixed;
+  left: 16px;
+  bottom: 16px;
+  padding: 8px 14px;
+  background: var(--hint-bg);
+  color: var(--hint-color);
+  border-radius: 10px;
+  backdrop-filter: blur(8px);
+  box-shadow: 0 0 10px rgba(0,0,0,0.4);
+  font-size: 14px;
+  user-select: none;
+  pointer-events: none;
+}
